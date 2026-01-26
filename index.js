@@ -81,7 +81,7 @@ global.pluginHooks.push(antiDeletePlugin);
 
 
 async function connectToWA() {
-  console.log("Connecting test-MD 🧬...");
+  console.log("Connecting DIL-BOT 🧬...");
   const { state, saveCreds } = await useMultiFileAuthState(path.join(__dirname, '/auth_info_baileys/'));
   const { version } = await fetchLatestBaileysVersion();
 
@@ -103,9 +103,9 @@ async function connectToWA() {
         connectToWA();
       }
     } else if (connection === 'open') {
-      console.log('✅ test-MD connected to WhatsApp');
+      console.log('✅ DIL-BOT connected to WhatsApp');
 
-      const up = `test-MD connected ✅\n\nPREFIX: ${prefix}`;
+      const up = `DIL-BOT connected ✅\n\nPREFIX: ${prefix}`;
       await test.sendMessage(ownerNumber[0] + "@s.whatsapp.net", {
         image: { url: `https://github.com/aadil20072023/botdil/blob/main/images/welcome_dilbot.png?raw=true` },
         caption: up
@@ -311,7 +311,7 @@ const quoted = type == 'extendedTextMessage' && mek.message.extendedTextMessage.
 ensureSessionFile();
 
 app.get("/", (req, res) => {
-  res.send("Hey, test-MD started✅");
+  res.send("Hey, DIL-BOT started✅");
 });
 
 app.listen(port, () => console.log(`Server listening on http://localhost:${port}`));
