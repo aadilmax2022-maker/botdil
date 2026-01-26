@@ -5,9 +5,9 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "5McUyI4D#NwF3TfNY78K0Yi-8rGD7EVES0Pzw7rSgKH7pNS40fd8",
-ALIVE_IMG: process.env.ALIVE_IMG || "https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true",
-ALIVE_MSG: process.env.ALIVE_MSG || "*Hello👋 DANUWA-MD Is Alive Now😍*",
+SESSION_ID: process.env.SESSION_ID || "suxGnBCS#f4rmJGkpjKHQKo_g54PQFBHPf1NQoRCXctQt-Sqaawo",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://github.com/aadil20072023/botdil/blob/main/images/welcome_dilbot.png?raw=true",
+ALIVE_MSG: process.env.ALIVE_MSG || "*Hello👋DIL-BOT Is Alive Now😍*",
 BOT_OWNER: '94774915917',  // Replace with the owner's phone number
 AUTO_STATUS_SEEN: 'true',
 AUTO_STATUS_REACT: 'true',
